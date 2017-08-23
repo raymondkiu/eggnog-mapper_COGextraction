@@ -7,6 +7,6 @@ This is a simple shell script written for the convenience of extracting COG clas
 
 Just execute using Linux command line:
 
-$ ./extract_COG.sh <FILENAME>
+$ ./extract_COG.sh FILENAME
 
-This will generate the final file COG_final.csv with column 1 the COG classes and column 2 is the hit counts (separated by commas).
+This will generate the final extracted file COG_final.csv with column 1 the COG classes and column 2 is the hit counts (separated by commas).
