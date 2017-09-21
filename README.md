@@ -6,6 +6,6 @@
 
 ## Usage
 ```
-$ ./extract_COG.sh FILENAME
+% ./extract_COG.sh FILENAME
 ```
 * This will generate the final extracted file FILENAME-COG-final.csv with column 1 the COG classes and column 2 is the hit counts (separated by commas).
