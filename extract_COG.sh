@@ -15,7 +15,7 @@ do
 awk -F "\t" '{print $11}' $i > $i-COG-unsorted
 sort $i-COG-unsorted > $i-COG-sorted
 
-for j in A B C D E F G H I J K L M N O P Q T U X Y Z R S W V;do grep $j $i-COG-sorted|wc -l >> $i-COG-num;done
+for j in A B C D E F G H I J K L M N O P Q T U X Y Z R S W V;do grep -w $j $i-COG-sorted|wc -l >> $i-COG-num;done
 for j in A B C D E F G H I J K L M N O P Q T U X Y Z R S W V;do echo $j >> $i-COG-let;done
 
 paste $i-COG-let $i-COG-num > $i-COG-final
